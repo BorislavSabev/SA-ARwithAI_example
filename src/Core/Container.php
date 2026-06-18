@@ -4,9 +4,9 @@ namespace Demo\Core;
 
 class Container
 {
-    private $bindings = array();
+    private $bindings = [];
 
-    function bind($id, $factory)
+    public function bind($id, $factory)
     {
         $this->bindings[$id] = $factory;
     }
@@ -14,15 +14,10 @@ class Container
     public function get($id)
     {
         if (isset($this->bindings[$id])) {
-              $factory = $this->bindings[$id];
-              return $factory($this);
+            $factory = $this->bindings[$id];
+            return $factory($this);
         }
 
         throw new \RuntimeException('No binding for ' . $id);
-    }
-
-    private function legacyResolve($id)
-    {
-        return isset($this->bindings[$id]) ? $this->bindings[$id] : null;
     }
 }

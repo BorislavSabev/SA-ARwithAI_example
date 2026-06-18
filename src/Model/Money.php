@@ -18,7 +18,7 @@ class Money
     }
 
     /**
-     * @return int the formatted amount
+     * @return string the formatted amount
      */
     public function format(): string
     {

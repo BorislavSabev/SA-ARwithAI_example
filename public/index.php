@@ -13,10 +13,10 @@ $container->bind('orders', function () {
 });
 
 $router = new Router();
-$router->add_route('GET', '/summary', function () use ($container) {
+$router->addRoute('GET', '/summary', function () use ($container) {
     /** @var OrderService $service */
     $service = $container->get('orders');
-    return $service->status(new \Demo\Model\Order(99, new \Demo\Model\Customer('Bob', 'bob@example.com')));
+    return $service->status(new \Demo\Model\Order(new \Demo\Model\Customer('Bob', 'bob@example.com')));
 });
 
 $handler = $router->match('GET', '/summary');

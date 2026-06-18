@@ -4,17 +4,11 @@ namespace Demo\Model;
 
 class Order
 {
-    private $id;
-    private $customer;
-    private $items;
-    private $paid;
+    private $items = [];
+    private $paid = false;
 
-    public function __construct($id, Customer $customer)
+    public function __construct(private readonly Customer $customer)
     {
-        $this->id = $id;
-        $this->customer = $customer;
-        $this->items = array();
-        $this->paid = false;
     }
 
     public function getCustomer(): Customer
@@ -24,7 +18,7 @@ class Order
 
     public function addItem($label, Money $price)
     {
-        $this->items[] = array('label' => $label, 'price' => $price);
+        $this->items[] = ['label' => $label, 'price' => $price];
     }
 
     public function getTotal(): Money

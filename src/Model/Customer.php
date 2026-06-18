@@ -4,13 +4,8 @@ namespace Demo\Model;
 
 class Customer
 {
-    private string $name;
-    private string $email;
-
-    public function __construct(string $name, string $email)
+    public function __construct(private readonly string $name, private readonly string $email)
     {
-        $this->name = $name;
-        $this->email = $email;
     }
 
     public function getName()

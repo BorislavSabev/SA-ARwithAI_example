@@ -1,0 +1,136 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Demo\\\\Core\\\\Container\\:\\:bind\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Core/Container.php
+
+		-
+			message: "#^Method Demo\\\\Core\\\\Container\\:\\:bind\\(\\) has parameter \\$factory with no type specified\\.$#"
+			count: 1
+			path: src/Core/Container.php
+
+		-
+			message: "#^Method Demo\\\\Core\\\\Container\\:\\:bind\\(\\) has parameter \\$id with no type specified\\.$#"
+			count: 1
+			path: src/Core/Container.php
+
+		-
+			message: "#^Method Demo\\\\Core\\\\Container\\:\\:get\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Core/Container.php
+
+		-
+			message: "#^Method Demo\\\\Core\\\\Container\\:\\:get\\(\\) has parameter \\$id with no type specified\\.$#"
+			count: 1
+			path: src/Core/Container.php
+
+		-
+			message: "#^Property Demo\\\\Core\\\\Container\\:\\:\\$bindings has no type specified\\.$#"
+			count: 1
+			path: src/Core/Container.php
+
+		-
+			message: "#^Method Demo\\\\Core\\\\Router\\:\\:addRoute\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Core/Router.php
+
+		-
+			message: "#^Method Demo\\\\Core\\\\Router\\:\\:addRoute\\(\\) has parameter \\$handler with no type specified\\.$#"
+			count: 1
+			path: src/Core/Router.php
+
+		-
+			message: "#^Method Demo\\\\Core\\\\Router\\:\\:addRoute\\(\\) has parameter \\$method with no type specified\\.$#"
+			count: 1
+			path: src/Core/Router.php
+
+		-
+			message: "#^Method Demo\\\\Core\\\\Router\\:\\:addRoute\\(\\) has parameter \\$path with no type specified\\.$#"
+			count: 1
+			path: src/Core/Router.php
+
+		-
+			message: "#^Method Demo\\\\Core\\\\Router\\:\\:match\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Core/Router.php
+
+		-
+			message: "#^Method Demo\\\\Core\\\\Router\\:\\:match\\(\\) has parameter \\$method with no type specified\\.$#"
+			count: 1
+			path: src/Core/Router.php
+
+		-
+			message: "#^Method Demo\\\\Core\\\\Router\\:\\:match\\(\\) has parameter \\$path with no type specified\\.$#"
+			count: 1
+			path: src/Core/Router.php
+
+		-
+			message: "#^Property Demo\\\\Core\\\\Router\\:\\:\\$routes has no type specified\\.$#"
+			count: 1
+			path: src/Core/Router.php
+
+		-
+			message: "#^Method Demo\\\\Model\\\\Customer\\:\\:getName\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Model/Customer.php
+
+		-
+			message: "#^Method Demo\\\\Model\\\\Money\\:\\:__construct\\(\\) has parameter \\$cents with no type specified\\.$#"
+			count: 1
+			path: src/Model/Money.php
+
+		-
+			message: "#^Method Demo\\\\Model\\\\Money\\:\\:cents\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Model/Money.php
+
+		-
+			message: "#^Method Demo\\\\Model\\\\Order\\:\\:addItem\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Model/Order.php
+
+		-
+			message: "#^Method Demo\\\\Model\\\\Order\\:\\:addItem\\(\\) has parameter \\$label with no type specified\\.$#"
+			count: 1
+			path: src/Model/Order.php
+
+		-
+			message: "#^Method Demo\\\\Model\\\\Order\\:\\:isPaid\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Model/Order.php
+
+		-
+			message: "#^Method Demo\\\\Model\\\\Order\\:\\:markPaid\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Model/Order.php
+
+		-
+			message: "#^Property Demo\\\\Model\\\\Order\\:\\:\\$items has no type specified\\.$#"
+			count: 1
+			path: src/Model/Order.php
+
+		-
+			message: "#^Property Demo\\\\Model\\\\Order\\:\\:\\$paid has no type specified\\.$#"
+			count: 1
+			path: src/Model/Order.php
+
+		-
+			message: "#^Method Demo\\\\Repository\\\\OrderRepository\\:\\:find\\(\\) has parameter \\$id with no type specified\\.$#"
+			count: 1
+			path: src/Repository/OrderRepository.php
+
+		-
+			message: "#^Method Demo\\\\Service\\\\OrderService\\:\\:reprice\\(\\) has parameter \\$id with no type specified\\.$#"
+			count: 1
+			path: src/Service/OrderService.php
+
+		-
+			message: "#^Method Demo\\\\Service\\\\OrderService\\:\\:summary\\(\\) has parameter \\$id with no type specified\\.$#"
+			count: 1
+			path: src/Service/OrderService.php
+
+		-
+			message: "#^Method Demo\\\\Service\\\\OrderService\\:\\:totalCents\\(\\) has parameter \\$id with no type specified\\.$#"
+			count: 1
+			path: src/Service/OrderService.php

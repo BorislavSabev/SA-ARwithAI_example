@@ -4,7 +4,7 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "php": "7.4.*"
+        "php": ">=8.3"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.10",
@@ -19,7 +19,7 @@
         "psr-4": { "Demo\\Rector\\": "ai/rules/" }
     },
     "config": {
-        "platform": { "php": "7.4.33" },
+        "platform": { "php": "8.3.0" },
         "sort-packages": true
     },
     "scripts": {
