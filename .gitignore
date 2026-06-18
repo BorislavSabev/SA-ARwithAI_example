@@ -1,0 +1,12 @@
+# Dependencies
+/vendor/
+
+# PHP tool caches
+.php-cs-fixer.cache
+.phpunit.result.cache
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp

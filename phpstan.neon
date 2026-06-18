@@ -1,0 +1,9 @@
+# Uncomment the include to demonstrate the ratchet pattern (Layer 4):
+# the baseline freezes today's findings so CI only fails on NEW ones.
+# includes:
+#     - phpstan-baseline.neon
+
+parameters:
+    level: 8
+    paths:
+        - src

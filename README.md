@@ -1,0 +1,20 @@
+# Order Processing — Static Analysis Demo Repo
+
+**This is a teaching artifact, not production code.** Every file contains
+*intentional, documented flaws* (see `FLAWS.md`) so that PHPCS, PHPStan, and
+Rector each produce a visibly satisfying before/after when run against it.
+
+It backs a talk on static analysis & automated refactoring in the era of
+AI-assisted coding. Target source version is PHP 7.4; the Rector demo upgrades
+it to PHP 8.3.
+
+## Run the pipeline
+
+```bash
+composer install
+composer lint          # PHPCS — style violations
+composer analyse       # PHPStan — real bugs
+composer refactor:dry  # Rector — modernization diff (no writes)
+```
+
+See `clips/RUNBOOK.md` for the exact command behind each demo clip.

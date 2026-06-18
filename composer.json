@@ -1,0 +1,32 @@
+{
+    "name": "demo/order-processing",
+    "description": "Deliberately flawed PHP app for a static-analysis & refactoring talk. NOT production code.",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "7.4.*"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.10",
+        "friendsofphp/php-cs-fixer": "^3.64",
+        "phpstan/phpstan": "^1.12",
+        "rector/rector": "^1.2"
+    },
+    "autoload": {
+        "psr-4": { "Demo\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Demo\\Rector\\": "ai/rules/" }
+    },
+    "config": {
+        "platform": { "php": "7.4.33" },
+        "sort-packages": true
+    },
+    "scripts": {
+        "lint": "phpcs --standard=phpcs.xml src",
+        "lint:fix": "php-cs-fixer fix",
+        "analyse": "phpstan analyse",
+        "refactor:dry": "rector process --dry-run",
+        "refactor": "rector process"
+    }
+}
