@@ -12,3 +12,4 @@ quality:
     - composer lint
     - composer analyse
     - composer refactor:dry
+    - composer test
