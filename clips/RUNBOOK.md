@@ -9,7 +9,9 @@ clips so the flaws persist. Record terminal with your tool of choice.
 | 1b style-after | 1 | `php-cs-fixer fix --dry-run --diff` | fix diff |
 | 2a bugs | 2 | `composer analyse` | 3 scary bugs + dead code |
 | 2b level-dial | 2 | `phpstan analyse src --level 1`; `--level 5`; `--level 8` | growing findings (0 → 6 → 41) |
+| 2c tests-green | 2 | `composer test` | 6 green tests on the flawed baseline (tests ≠ static analysis) |
 | 3a refactor | 3 | `composer refactor:dry` | modernization diff |
+| 3b tests-still-green | 3 | `composer test` on `gate-passing` | same tests green after Rector (behavior preserved) |
 | 4a gate-fail | 4 | branch `gate-failing` → PR to `main` (CI already live) | red X on PR |
 | 4b gate-pass | 4 | branch `gate-passing` (CI already live) | green check |
 | 6a ai-oracle | 6 | `phpstan analyse src --error-format=json > phpstan.json` | JSON ground truth |
