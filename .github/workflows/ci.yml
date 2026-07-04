@@ -21,3 +21,5 @@ jobs:
         run: composer analyse
       - name: Refactor check (Rector dry-run)
         run: composer refactor:dry
+      - name: Tests (PHPUnit)
+        run: composer test
