@@ -44,6 +44,9 @@ class OrderService
     public function receiptTotal(int $id): int
     {
         $order = $this->repository->find($id);
+        if (!$order instanceof \Demo\Model\Order) {
+            return 0;
+        }
 
         return $order->getTotal()->cents();
     }
