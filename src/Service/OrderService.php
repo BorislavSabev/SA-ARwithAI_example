@@ -41,6 +41,13 @@ class OrderService
         return $order->getTotal()->cents() * 2;
     }
 
+    public function receiptTotal(int $id): int
+    {
+        $order = $this->repository->find($id);
+
+        return $order->getTotal()->cents();
+    }
+
     public function status(Order $order): string
     {
         if ($order->isPaid()) {
