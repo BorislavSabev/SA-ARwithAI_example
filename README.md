@@ -17,4 +17,12 @@ composer analyse       # PHPStan — real bugs
 composer refactor:dry  # Rector — modernization diff (no writes)
 ```
 
-See `clips/RUNBOOK.md` for the exact command behind each demo clip.
+Check out the workflow example in `.github/`.
+
+## Presentation deck
+See `docs/` for the presentation and demo clips.
+
+## Want to learn more?
+Want to learn more about deterministic guardrails for AI-assisted development workflows? [Follow me](https://github.com/BorislavSabev) and let's connect!
+
+Have a problem you'd want to resolve? [DM me](https://www.linkedin.com/in/borkata/), I love helping out.
